@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.button-groups {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn,
+.btn-outline {
+  padding: 7px 20px;
+  min-width: 100px;
+  border-radius: 100px;
+  cursor: pointer;
+  &:hover {
+    filter: opacity(0.9);
+  }
+}
+
+.btn {
+  background-color: $color__secondary;
+  color: #fff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: $color__secondary;
+  border: 2px solid $color__secondary;
+}
+
+.btn-outline:hover {
+  background-color: $color__secondary;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 12px;
+  background: #ecebeb;
+}
+
+::-webkit-scrollbar-button:increment,
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 12px;
+  background: #ecebeb;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border-radius: 10px;
+  border: 2px solid #b9b9b9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #898989;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.music-play {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+    cursor: pointer;
+    &:hover ~ img {
+      filter: brightness(0.7);
+    }
+  }
+}
+
+.input-search {
+  max-width: 530px;
+  min-width: 360px;
+  width: 100%;
+  border-radius: 100px;
+  border: 1px solid #828282;
+  padding: 10px 20px;
+}
+
+.input-range {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 5px;
+  background-color: #fff;
+  outline: none;
+}
+.input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.menu-profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,43 @@
+.menu {
+  padding: 40px 0;
+  background-color: $color__primary;
+  color: #fff;
+  .menu-logo {
+    padding: 0 40px 30px;
+    img {
+      width: 100%;
+      max-width: 250px;
+      height: 60px;
+    }
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h3 {
+      padding: 0 40px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .menu-list__item {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 5px 0 0;
+        li {
+          padding: 0 40px;
+          cursor: pointer;
+          &.on,
+          &:hover {
+            color: $color__secondary;
+            border-left: 2px solid $color__secondary;
+          }
+        }
+      }
+    }
+  }
+}
