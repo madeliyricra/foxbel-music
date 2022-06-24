@@ -4,16 +4,17 @@
   color: #fff;
   .menu-logo {
     padding: 0 40px 30px;
+    text-align: center;
     img {
       width: 100%;
       max-width: 250px;
       height: 60px;
+      object-fit: contain;
     }
   }
 
   .menu-list {
     display: flex;
-    flex-direction: column;
     gap: 30px;
 
     h3 {
@@ -38,6 +39,12 @@
           }
         }
       }
+    }
+  }
+
+  @media screen and (min-width: $size__desktop) {
+    .menu-list {
+      flex-direction: column;
     }
   }
 }

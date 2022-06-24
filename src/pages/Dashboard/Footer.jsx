@@ -89,7 +89,7 @@ const Footer = ({
                 x2="130"
                 y2="10"
                 stroke="#662323"
-                strokeWidth="4"
+                strokeWidth="6"
                 id="mute"
                 style={sound > 0 ? { display: "none" } : { display: "block" }}
               />
