@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/foxbel-music/static/css/main.0d5edd90.css",
+    "main.js": "/foxbel-music/static/js/main.faba9b8e.js",
+    "static/media/listIcons.svg": "/foxbel-music/static/media/listIcons.831eac85cab368a7ec722c67181cfc6a.svg",
+    "index.html": "/foxbel-music/index.html",
+    "main.0d5edd90.css.map": "/foxbel-music/static/css/main.0d5edd90.css.map",
+    "main.faba9b8e.js.map": "/foxbel-music/static/js/main.faba9b8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d5edd90.css",
+    "static/js/main.faba9b8e.js"
+  ]
+}
