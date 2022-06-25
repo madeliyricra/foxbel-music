@@ -1,11 +1,11 @@
 import React from "react";
 import Icon from "../../components/Icon";
 
-const CardMusic = ({ image, name, author }) => {
+const CardMusic = ({ image, name, author, handleClick }) => {
   return (
     <div className="card-music">
       <div className="music-play">
-        <Icon name="play" className="" />
+        <Icon name="play" className="" handleClick={handleClick} />
         <img src={image} alt={name} />
       </div>
       <div className="card-music-description">

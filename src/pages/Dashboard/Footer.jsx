@@ -6,11 +6,11 @@ const Footer = ({
   musicName,
   authorName,
   albumName,
-  playMusic,
+  audio,
+  play,
+  setPlay,
 }) => {
-  const [play, setPlay] = useState(false);
   const [sound, setSound] = useState(100);
-  const [audio, setAudio] = useState(new Audio(playMusic));
 
   const volumeAudio = () => {
     const VOLUME_COUNT = sound / 100;
